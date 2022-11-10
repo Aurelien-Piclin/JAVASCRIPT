@@ -1,0 +1,52 @@
+<!-- https://www.javatpoint.com/jquery-click -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+        <script>   
+        $(document).ready(function(){  
+            $("#flip").click(function(){  
+                $("#panel").slideUp("slow");  
+            });  
+        });  
+        </script>  
+         <style>   
+        #panel, #flip {  
+            padding: 5px;  
+            text-align: center;  
+            background-color: #00FFFF;  
+            border: solid 1px #c3c3c3;  
+        }  
+        #panel {  
+            padding: 50px;  
+        }  
+        </style>
+        <script>  
+            $(document).ready(function(){  
+                $("p").click(function(){  
+                    alert("This paragraph was clicked.");  
+                });  
+            });  
+        </script>
+        <script>  
+            $(document).ready(function(){  
+                $("h1,h2,h3").click(function(){  
+                    $(this).hide();  
+                });  
+            });  
+            </script>     
+        </head>  
+        <body>  
+        <div id="flip">Click to slide up panel</div>  
+        <div id="panel">Hello javatpoint.com!   
+        It is the best tutorial website to learn jQuery and other languages.</div>    
+        <p>Click on the statement.</p>
+                  
+        <h1>This heading will disappear if you click on this.</h1>  
+        <h2>I will also disappear.</h2>  
+        <h3>Me too.</h3>  
+        </body>
+</html>
+
